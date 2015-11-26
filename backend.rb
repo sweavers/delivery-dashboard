@@ -28,13 +28,23 @@ class DryCode
 				if result_item[0] == "url"
 					@url = result_item[1]
 				end
+				if result_item[0] == "priority"
+					@priority = result_item[1]
+				end
 			end
 			captalised_profile = item["wp_title"]
 			new_hash[captalised_profile] = {}
 			new_hash[captalised_profile]['rag_status'] = @rag_status
 			new_hash[captalised_profile]['url'] = @url
+			new_hash[captalised_profile]['priority'] = @priority.to_i
 		end
-		new_hash = Hash[new_hash.sort]
+
+		new_hash = new_hash.sort_by { |k, v| v['priority'] }
+		#new_hash = Hash[new_hash.sort]
+
+		puts '#######################'
+		puts new_hash
+		puts '#######################'
 		new_hash
 	end
 
