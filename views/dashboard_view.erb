@@ -42,19 +42,29 @@
 		border: 2px solid #BDC3C7;
 		position:relative;
 	}
+	.Project {
+		width:<%= @width_value + "%;"%>
+		float: left;
+		position:relative;
+	}
 </style>
 <head>
+	<h1 class="Project centreText">DRV</h1>
+	<h1 class="Project centreText">LC</h1>
+	<h1 class="Project centreText">DM</h1>
+	<h1 class="Project centreText">DMP</h1>
 </head>
 <body>
 <% count = 0
 	@new_hash.each do |profile, data|
-		rag_status = data['rag_status']
+		status = data['status']
 		url = data['url']
+		env = data['env']
 		count = count + 1%>
 		<a target="_blank" href="<%=url%>">
-			<button type="button" class="<%=rag_status%>" data-toggle="modal" data-target="">
+			<button type="button" class="<%=status%>" data-toggle="modal" data-target="">
 				<div class="centreMe">
-				  <div><b><%=profile%></b></div>
+				  <div><b><%=env%></b></div>
 				</div>
 			</button>
 		</a>

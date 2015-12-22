@@ -58,6 +58,12 @@ body {
 	margin-top: 10%;
 }
 
+.centreText {
+	text-align: center;
+	color: #22313F;
+	font-size: 5vh;
+}
+
 .exitCodeUnknown {
 	margin-left: 20px;
 	margin-bottom: 20px;
