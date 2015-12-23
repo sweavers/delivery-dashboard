@@ -8,51 +8,38 @@
 <script>
 </script>
 <style>
-	.Green {
-		background: #26A65B;
+	.Green, .Amber, .Red, .Grey {
+		background: #27AE60;
 		width:<%= @width_value + "%;"%>
 		height:<%= @height_value + "vh;"%>
 		float: left;
-		border: 2px solid #BDC3C7;
+		border: 2px solid #EEEEEE;
 		position:relative;
 	}
-
 	.Amber {
 		background: #EB9532;
-		width:<%= @width_value + "%;"%>
-		height:<%= @height_value + "vh;"%>
-		float: left;
-		border: 2px solid #BDC3C7;
-		position:relative;
 	}
-
 	.Red {
-		background: #D64541;
-		width:<%= @width_value + "%;"%>
-		height:<%= @height_value + "vh;"%>
-		float: left;
-		border: 2px solid #BDC3C7;
-		position:relative;
+		background: #EF4836;
 	}
 	.Grey {
-		background: #95A5A6;
-		width:<%= @width_value + "%;"%>
-		height:<%= @height_value + "vh;"%>
-		float: left;
-		border: 2px solid #BDC3C7;
-		position:relative;
+		background: #7F8C8D;
 	}
+
 	.Project {
+		background: #EEEEEE;
 		width:<%= @width_value + "%;"%>
+		height: 10vh;
 		float: left;
+		border: 2px solid #EEEEEE;
 		position:relative;
 	}
 </style>
 <head>
-	<h1 class="Project centreText">DRV</h1>
-	<h1 class="Project centreText">LC</h1>
-	<h1 class="Project centreText">DM</h1>
-	<h1 class="Project centreText">DMP</h1>
+	<div class="Project centreText">DRV</div>
+	<div class="Project centreText">LC</div>
+	<div class="Project centreText">DM</div>
+	<div class="Project centreText">DMP</div>
 </head>
 <body>
 <% count = 0

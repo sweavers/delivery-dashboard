@@ -13,4 +13,4 @@
 {"project":"DRV_pro","result":{"env":"Production","status":"Green","url":"https://www.google.co.uk"}},
 {"project":"LC_pro","result":{"env":"Production","status":"Grey","url":"https://www.google.co.uk"}},
 {"project":"DM_pro","result":{"env":"Production","status":"Red","url":"https://www.google.co.uk"}},
-{"project":"DMP_pro","result":{"env":"Production","status":"Red","url":"https://www.google.co.uk/?gws_rd=ssl"}}]
+{"project":"DMP_pro","result":{"env":"Production","status":"Red","url":"https://www.google.co.uk"}}]
